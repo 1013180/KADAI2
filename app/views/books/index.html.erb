@@ -1,4 +1,13 @@
 <h3>Books</h3>
+<% if @book.errors.any? %>
+  <div class="alert alert-warning">
+    <ul>
+      <% @book.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+ <% end %>
 
 <table>
 <thead>
@@ -25,12 +34,6 @@
 <%= link_to "destroy", book_path(book.id), method: :delete, data: { confirm: 'Are you sure?'}  %>
 
 
-<!--<= link_to "/todos/#{t.id}", class: "text-danger", method: :delete, data:-->
-<!--  { confirm: 'Todoを削除しますか？',-->
-<!--    cancel: 'やめる',-->
-<!--    commit: '削除'}, title: '削除の確認' do %>-->
-<!--    削除ボタン-->
-<!--< end >-->
 </td>
 <% end %>
 </tbody>
