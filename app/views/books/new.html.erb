@@ -1,1 +1,17 @@
-render("posts/new")
+<h2>メッセージの投稿</h2>
+
+<%= form_for(@message) do |f|%>
+<%= render 'layouts/error_messages', @book: f.object %>
+<div class="form-group">
+<%= f.label :title %>
+<%= f.text_field :title %>
+</div>
+
+<div class="form-group">
+<%= f.label :content %>
+<%= f.text_area :content %>
+</div>
+
+<%= f.submit "投稿する", class: "btn-primary" %>
+
+<% end %>

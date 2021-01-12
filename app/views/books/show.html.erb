@@ -1,12 +1,12 @@
-
+  <%= notice %>
   <br><strong>Title:</strong>
   <%= @book.title %></br>
   <br><strong>Body:</strong>
   <%= @book.body %></br>
- <br><a class="show" href="/books/5">Show</a>
+ <br><%= link_to "edit", edit_book_path(@book.id) %>
   "|
   "
-  <a class="back" href="/books">Back</a></br>
+  　<%= link_to "back", books_path %>
 
 
 
