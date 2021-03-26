@@ -2,6 +2,7 @@
 一か月目の課題２
 
 本の投稿サイト
+UserモデルとBookモデルを作成。
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
