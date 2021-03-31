@@ -1,5 +1,8 @@
 # README
+一か月目の課題２
 
+本の投稿サイト
+UserモデルとBookモデルを作成。
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
@@ -20,5 +23,3 @@ Things you may want to cover:
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
-
-* ...
